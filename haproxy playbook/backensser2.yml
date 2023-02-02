@@ -1,10 +1,10 @@
 ---
-name: install haproxy on ubuntu
-hosts: all 
-become: yes
-tasks
-  - name: apache2 on ubuntu
-    ansible.builtin.apt:
-      name: apache2
-      update_cache : yes
-      state: present
+- name: install haproxy on ubuntu
+  hosts: all 
+  become: yes
+  tasks
+    - name: apache2 on ubuntu
+      ansible.builtin.apt:
+        name: apache2
+        update_cache : yes
+        state: present
